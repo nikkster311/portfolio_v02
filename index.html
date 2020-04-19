@@ -9,13 +9,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="home">
   <header>
     <!-- START HEADER -->
 
-    <!-- <div class="logo">
-      <img src="spruce.JPG" class="intro__img" alt="">
-    </div> -->
+    <div class="logo">
+      <!-- <img src="lichen.JPG" class="intro__img" alt=""> -->
+      <!-- <h4 class="intro__logo-text">nikkster.tech</h4> -->
+    </div>
     <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
     </button>
@@ -24,7 +25,7 @@
         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
         <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
         <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
     </nav>
@@ -32,7 +33,7 @@
 
   <!-- INTRO -->
 
-  <section class="intro" id="home">
+  <section class="intro">
     <div class="intro-container">
       <h1 class="section__title section__title--intro">
         Hi, my name is <strong>Nikki Hermann</strong>
@@ -56,7 +57,26 @@
     <p class="section__subtitle section__subtitle--about">This is my about me section</p>
 
     <div class="about-me__body">
-      <p>aslkdjf aslkdjf asdk;ljf a;sdlfkj as;dflkj asd;fklj asdf;kj sd;flkj asd;flkj asdflkjas df;lkjasd f;lkasjdf ;alksdjf as;ldkfj as;ldkfj asdlkfj as;dlkfj </p>
+
+      <!-- Full Stack Developer (MERN) //
+Full-time freelancer //
+Team member - Self-motivated - Clear communicator //
+Tech enthusiast - Problem-solver //
+React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
+
+      <p>I am a full stack developer with experience building and deploying
+        <strong>responsive websites</strong> and <strong>user-friendly
+        applications</strong>. I specialize in <strong>React</strong> and
+        <strong>Node.js</strong>, using <strong>Express</strong> and
+        <strong>MongoDB</strong>, and have experience with <strong>HTML, CSS,
+        Javascript,</strong> and <strong>Python</strong>. I also have experience
+        with data analysis and interpretation of data.</p>
+      <p>My experience as an interpretive ranger for the National Park Service
+        has given me interpersonal skills and the ability to take a lot of
+        information and make it not only digestible but attention-grabbing as
+        well. <strong>I am well-versed at speaking in front of groups of people
+        of all backgrounds, as well as leading teams, serving as a mentor, and
+        training others</strong>.</p>
 
     </div>
     <img src="profimgsquare.JPG" class="about-me__img" alt="image of Nikki">
@@ -82,11 +102,37 @@
           <p>LOREM IPSUM DOLOR lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor  </p>
         </div>   <!-- close service -->
 
+
+        <h2 class="section__title section__title--services">My Skills</h2>
         <div class="service">
-          <h3>Data Sceince and Analytics</h3>
-          <p>LOREM IPSUM DOLOR lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor  </p>
+          <ul>
+            <li>Javascript</li>
+            <li>HTML/CSS</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MondoDB</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>Database Architecture</li>
+            <li>Problem Solving Skills</li>
+            <li>Data Structures</li>
+            <li>Strategic Planning</li>
+            <li>Web Services</li>
+            <li>Web APIs</li>
+            <li>Mentoring</li>
+            <li>Teamwork</li>
+
+
+
+
+
+
+          </ul>
         </div>   <!-- close service -->
+
       </div>    <!-- close serviceS -->
+
 
     <a href="#work" class="btn">My work</a>
     <a href="#home" class="btn">Back to top</a>
@@ -104,9 +150,120 @@
 
 <!-- portfolio item 01 -->
   <div class="portfolio">
-    <a href="#" class="portfolio__item">
+    <button data-modal="modal1" class="modal-open portfolio__item">
+      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
+    </button>
+    <button data-modal="modal2" data-target="myModal" id="portfolioModalBtn" class="portfolio__item">
+      <img src="comp_coffee_blanket.JPG" alt="" class="portfolio__img">
+    </button>
+    <button data-modal="modal3" data-target="myModal" id="portfolioModalBtn" class="portfolio__item">
+      <img src="bones_vc.JPG" alt="" class="portfolio__img">
+    </button>
+
+      <!-- Modal -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">modal header
+            <button class="icon close-modal close">&times;</button>
+          </div>
+          <div class="modal-body">lorem ipsum dolor</div>
+          <div class="modal-footer">footer</div>
+        </div>
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">modal header
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">lorem ipsum dolor</div>
+          <div class="modal-footer">footer</div>
+        </div>
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
+
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">modal header
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">lorem ipsum dolor</div>
+          <div class="modal-footer">footer</div>
+        </div>
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
+
+      </div>
+
+
+    <button data-target="myModal" id="portfolioModalBtn" class="portfolio__item">
+      <img src="lichen.JPG" alt="" class="portfolio__img">
+    </button>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
+      </div>
+
+
+    <a href=#work id="portfolioModalBtn" class="portfolio__item">
       <img src="IMG_6090.JPG" alt="" class="portfolio__img">
     </a>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
+      </div>
+
+
+    <a href=#work id="portfolioModalBtn" class="portfolio__item">
+      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
+    </a>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
+      </div>
+
+
+    <a href=#work id="portfolioModalBtn" class="portfolio__item">
+      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
+    </a>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+
+      </div>
 
 
 <!-- portfolio item 02 -->
@@ -137,7 +294,7 @@
   <a href="#home" class="btn"> Back to top </a>
 </section>
 
-<footer class="footer">
+<footer class="footer" id="contact">
   <a href="mailto:nikki@nikkster.tech" class="footer__link">nikki@nikkster.tech</a>
   <div class="footer-grid">
   <div class="social-list-div">
@@ -168,12 +325,17 @@
     </div>
     <div class="message">
       <textarea placeholder="Message"></textarea>
-      <button class="btn">Send</button>
+      <button class="btn">Send me a message</button>
     </div>
   </div>
 
 
   </div>
 </footer>
+
+
+<script src="index.js"></script>
+
+
     </body>
   </html>
