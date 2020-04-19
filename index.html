@@ -79,7 +79,7 @@ React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
         training others</strong>.</p>
 
     </div>
-    <img src="profimgsquare.JPG" class="about-me__img" alt="image of Nikki">
+    <img src="./imgs/profimgsquare.JPG" class="about-me__img" alt="image of Nikki">
   </div>
   <div class="btn-container">
     <a href="#work" class="btn">My work</a>
@@ -150,147 +150,103 @@ React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
 
 <!-- portfolio item 01 -->
   <div class="portfolio">
-    <button data-modal="modal1" class="modal-open portfolio__item">
-      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
-    </button>
-    <button data-modal="modal2" data-target="myModal" id="portfolioModalBtn" class="portfolio__item">
-      <img src="comp_coffee_blanket.JPG" alt="" class="portfolio__img">
-    </button>
-    <button data-modal="modal3" data-target="myModal" id="portfolioModalBtn" class="portfolio__item">
-      <img src="bones_vc.JPG" alt="" class="portfolio__img">
-    </button>
+    <a href="#work" data-modal="modal1"  class="modal-open portfolio__item">
+      <img src="./imgs/IMG_6090.JPG" alt="" class="portfolio__img">
+    </a>
+    <a href="#work" data-modal="modal2" class="portfolio__item">
+      <img src="./imgs/comp_coffee_blanket.JPG" alt="" class="portfolio__img">
+    </a>
+    <a href="#work" data-modal="modal3" class="portfolio__item">
+      <img src="./imgs/bones_vc.JPG" alt="" class="portfolio__img">
+    </a>
+    <a href="#work" data-modal="modal4"  class="modal-open portfolio__item">
+      <img src="./imgs/IMG_6090.JPG" alt="" class="portfolio__img">
+    </a>
+    <a href="#work" data-modal="modal5" class="portfolio__item">
+      <img src="./imgs/comp_coffee_blanket.JPG" alt="" class="portfolio__img">
+    </a>
+
 
       <!-- Modal -->
       <div id="modal1" class="modal">
         <div class="modal-content">
-          <div class="modal-header">modal header
-            <button class="icon close-modal close">&times;</button>
+          <div class="modal-header">The Other Four
+            <span class="close">&times;</span>
           </div>
-          <div class="modal-body">lorem ipsum dolor</div>
-          <div class="modal-footer">footer</div>
+          <div class="modal-body">
+            <h4>Take 15 seconds to stop and smell the roses.</h4>
+            <h5>Created with React and CSS</h5>
+            <img class="modal-img" src="./imgs/screenshots/the_other_four.png" alt="">
+            <a target="__blank" href="https://nikkster311.github.io/the-other-four-v-01/">Live Version</a> |
+            <a target="__blank" href="https://github.com/nikkster311/the-other-four-v-01">Github</a>
+            <p>Version 01 launched February 2019</p>
+          </div>
         </div>
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
+      </div>
 
       <div id="modal2" class="modal">
         <div class="modal-content">
-          <div class="modal-header">modal header
+          <div class="modal-header">
+            Dichotomous Key (Pacific Northwest Plants)
             <span class="close">&times;</span>
           </div>
-          <div class="modal-body">lorem ipsum dolor</div>
-          <div class="modal-footer">footer</div>
+          <div class="modal-body">
+            <h4>Figure out what plant you're looking at based on its characteristics.</h4>
+            <h5>Created with React and CSS</h5>
+            <h6>First Screen</h6>
+            <img class="modal-img" src="./imgs/screenshots/screencapture-nikkster311-github-io-dichotomous-key-v01-2020-03-29-20_30_18.png" alt="">
+            </br>
+            <h6>Search Screen</h6>
+            <img class="modal-img" src="./imgs/screenshots/screencapture-nikkster311-github-io-dichotomous-key-v01-2020-03-29-20_30_50.png" alt="">
+            </br>
+            <h6>Final Screen</h6>
+            <img class="modal-img" src="./imgs/screenshots/screencapture-nikkster311-github-io-dichotomous-key-v01-2020-03-29-20_31_30.png" alt="">
+            <a target="__blank" href="https://nikkster311.github.io/dichotomous_key_v01/">Live Version</a> |
+            <a target="__blank" href="https://github.com/nikkster311/dichotomous_key_v01/">Github</a>
+            <p>Version 01 launched March 2019</p>
+          </div>
         </div>
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-
+      </div>
 
       <div id="modal3" class="modal">
         <div class="modal-content">
-          <div class="modal-header">modal header
+          <div class="modal-header">
+            Packing List
             <span class="close">&times;</span>
           </div>
-          <div class="modal-body">lorem ipsum dolor</div>
-          <div class="modal-footer">footer</div>
+          <div class="modal-body">
+            <h4>Create categories and lists. Edit and delete them, and cross items off when complete.</h4>
+            <h5>Created with React and CSS</h5>
+            <img class="modal-img" src="./imgs/comp_coffee_table_edited.jpg" alt="">
+            <a target="__blank" href="https://nikkster311.github.io/the-other-four-v-01/">Live Version</a> |
+            <a target="__blank" href="https://github.com/nikkster311/the-other-four-v-01">Github</a>
+            <p>Version 01 launched March 2019</p>
+          </div>
         </div>
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-
-
       </div>
 
-
-    <button data-target="myModal" id="portfolioModalBtn" class="portfolio__item">
-      <img src="lichen.JPG" alt="" class="portfolio__img">
-    </button>
-
-      <!-- Modal -->
-      <div id="myModal" class="modal">
-
-        <!-- Modal content -->
+      <div id="modal4" class="modal">
         <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
+          <div class="modal-header">COVID19 Quarantine Task Generator
+            <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <h4>Need ideas for quarantine?</h4>
+            <h5>Created with Python, Javascript, HTML, and Bootstrap</h5>
+            <img class="modal-img" src="./imgs/comp_coffee_table_edited.jpg" alt="">
+            <a target="__blank" href="https://nikkster311.github.io/the-other-four-v-01/">Live Version</a> |
+            <a target="__blank" href="https://github.com/nikkster311/the-other-four-v-01">Github</a>
+            <p>Launched March 2019</p>
+          </div>
         </div>
+      </div>
+
 
       </div>
 
 
-    <a href=#work id="portfolioModalBtn" class="portfolio__item">
-      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
-    </a>
-
-      <!-- Modal -->
-      <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-
-      </div>
 
 
-    <a href=#work id="portfolioModalBtn" class="portfolio__item">
-      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
-    </a>
-
-      <!-- Modal -->
-      <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-
-      </div>
-
-
-    <a href=#work id="portfolioModalBtn" class="portfolio__item">
-      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
-    </a>
-
-      <!-- Modal -->
-      <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-
-      </div>
-
-
-<!-- portfolio item 02 -->
-    <a href="#" class="portfolio__item">
-      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
-    </a>
-
-<!-- portfolio item 03 -->
-    <a href="#" class="portfolio__item">
-      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
-    </a>
-
-<!-- portfolio item 04 -->
-    <a href="#" class="portfolio__item">
-      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
-    </a>
-
-<!-- portfolio item 05 -->
-    <a href="#" class="portfolio__item">
-      <img src="IMG_6090.JPG" alt="" class="portfolio__img">
-    </a>
-
-  <!-- portfolio item 06 -->
-      <a href="#" class="portfolio__item">
-        <img src="IMG_6090.JPG" alt="" class="portfolio__img">
-      </a>
-  </div>
   <a href="#home" class="btn"> Back to top </a>
 </section>
 

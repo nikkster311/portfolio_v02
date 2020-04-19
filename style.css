@@ -298,7 +298,7 @@ header{
 /* cotainer */
 
 .container {
-  background-image: url('IMG_6090.JPG');
+  background-image: url('./imgs/IMG_6090.JPG');
   /* filter: opacity(20%); */
   min-height: 100vh;
   background-size: cover;
@@ -469,7 +469,7 @@ header{
 
 .my-services {
   background-color: var(--clr-dark);
-  background-image: url("comp_coffee_table_edited.jpg");
+  background-image: url("./imgs/comp_coffee_table_edited.jpg");
   background-size: cover;
   background-position: center;
   color: var(--clr-light);
@@ -673,7 +673,7 @@ header{
     max-width: 1000px;
     margin: 0 auto;
   }
-
+}
 
   /* Modal */
 
@@ -708,25 +708,29 @@ header{
 .modal-header {
   font-weight: 500;
   /* padding: 10px 0; */
-  font-size: 26px;
+  font-size: 2.5em;
 }
 
-.modal-body {
-
+.modal-body a {
+ color: white;
 }
 
-.modal-footer {
-  padding: 8px 16px;
-  color: red;
-  background-color: green;
+.modal-body img {
+  width: 80%;
 }
 
+.modal-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 /* The Close Button */
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -735,10 +739,4 @@ header{
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-
-
-
-
 }
