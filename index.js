@@ -12,6 +12,15 @@ navLinks.forEach(link => {
 })
 
 
+// display submit confirmation on submit
+var contactSumbit = document.querySelectorAll(".contact-submit")
+contactSumbit.forEach(function(btn){
+  btn.onclick = function(){
+    var verifySubmit = document.getElementsByClassName('verify-submit');
+
+    document.getElementById(verifySubmit).style.display = 'block';
+  }
+})
 
 
 // modal

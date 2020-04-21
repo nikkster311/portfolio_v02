@@ -19,6 +19,7 @@ body{}
 
   --clr-light-rgb: 235, 217, 200;
   --clr-light: #ebd9c8;
+  --clr-dark-rgb: 56, 54, 65;
   --clr-dark: #383641;
   --clr-accent: #F6A472;
 
@@ -37,7 +38,7 @@ body{}
     --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
     --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
+    --fs-body: 1.2rem;
   }
 }
 
@@ -449,6 +450,7 @@ header{
 
     .about-me__body {
       grid-area: text;
+      padding-right: 1em;
     }
 
     .about-me__img {
@@ -496,9 +498,12 @@ header{
 }
 
 .service {
+  background-color: var(--clr-dark)
+  /* opacity: .7; */
   max-width: 500px;
   margin: 0 auto;
 }
+
 
 @media (min-width: 800px) {
   .services {
@@ -512,6 +517,8 @@ header{
   .service + .service {
     margin-left: 2em;
   }
+
+
 
 }
 
@@ -536,6 +543,21 @@ header{
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+  position: relative;
+}
+
+/* text over image for individual work items */
+.portfolio__item-title {
+  z-index:2;
+  left: 0;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--clr-light);
+  background-color: rgba(var(--clr-dark-rgb), .5);
 }
 
 .portfolio__img {
@@ -545,13 +567,19 @@ header{
 
 .portfolio__item:focus {
   position: relative;
-  z-index: 1;
+  /* z-index: 20; */
 }
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.1);
   opacity: .7;
 }
+/*
+.portfolio__img:hover + .portfolio__item-title ,
+.portfolio__item:focus .portfolio__img + .portfolio__item-title {
+  z-index: 1;
+} */
+
 
 .my-work .btn {
   margin: 2em 0 0 0;
@@ -640,6 +668,10 @@ header{
   max-width: 300px;
 }
 
+.verify-submit {
+  display: none;
+}
+
 @media (min-width: 600px) {
   .footer-grid {
     display: grid;
@@ -691,16 +723,16 @@ header{
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: var(--clr-dark); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #222;
+  background-color: var(--clr-dark);
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid var(--clr-light);
   width: 75%; /* Could be more or less, depending on screen size */
   z-index: 4;
 }
@@ -712,7 +744,11 @@ header{
 }
 
 .modal-body a {
- color: white;
+ color: var(--clr-accent);
+}
+
+.modal-body a:hover{
+  color: var(--clr-light);
 }
 
 .modal-body img {
@@ -728,7 +764,7 @@ header{
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: var(--clr-accent);
   float: right;
   font-size: 1em;
   font-weight: bold;
@@ -736,7 +772,7 @@ header{
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: var(--clr-light);
   text-decoration: none;
   cursor: pointer;
 }
