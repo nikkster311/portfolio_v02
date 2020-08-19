@@ -191,26 +191,30 @@ React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
 <!-- portfolio item 01 -->
   <div class="portfolio">
     <a href="#work" data-modal="modal1" class="portfolio__item">
+      <p class="portfolio__item-title">What Can I Make?</p>
+      <img src="./imgs/IMG_6090.JPG" alt="" class="portfolio__img">
+    </a>
+    <a href="#work" data-modal="modal2" class="portfolio__item">
       <p class="portfolio__item-title">Three Things</p>
       <img src="./imgs/treehouse.jpg" alt="" class="portfolio__img">
     </a>
-    <a href="#work" data-modal="modal2" class="portfolio__item">
+    <a href="#work" data-modal="modal3" class="portfolio__item">
       <p class="portfolio__item-title">Packing List</p>
       <img src="./imgs/bones_vc.JPG" alt="" class="portfolio__img">
     </a>
-    <a href="#work" data-modal="modal3" class="portfolio__item">
+    <a href="#work" data-modal="modal4" class="portfolio__item">
       <p class="portfolio__item-title">Dichotomous Key (Pacific Northwest Plants)</p>
       <img src="./imgs/comp_coffee_blanket.JPG" alt="" class="portfolio__img">
     </a>
-    <a href="#work" data-modal="modal4" class="portfolio__item">
+    <a href="#work" data-modal="modal5" class="portfolio__item">
       <p class="portfolio__item-title">Portfolio - Version 01</p>
       <img src="./imgs/shoes_wsnm.JPG" alt="" class="portfolio__img">
     </a>
-    <a href="#work" data-modal="modal5"  class="modal-open portfolio__item">
+    <a href="#work" data-modal="modal6"  class="modal-open portfolio__item">
       <p class="portfolio__item-title">The Other Four</p>
       <img src="./imgs/lichen.JPG" alt="" class="portfolio__img">
     </a>
-    <a href="#work" data-modal="modal6"  class="modal-open portfolio__item">
+    <a href="#work" data-modal="modal7"  class="modal-open portfolio__item">
       <p class="portfolio__item-title">COVID-19 Quarantine Task Generator</p>
       <img src="./imgs/shoes_on_kennebeck.JPG" alt="" class="portfolio__img">
     </a>
@@ -218,12 +222,43 @@ React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
 
 
       <!-- Modal -->
-
       <div id="modal1" class="modal">
         <div class="modal-content">
-          <div class="modal-header">Three Things
-            <span class="close">&times;</span>
+          <span class="close">&times;</span>
+          <div class="modal-header">What Can I Make?</div>
+          <div class="modal-body">
+            <h4>Do you wonder what recipes you can make with the ingredients you have on hand? Let's find out.</h4>
+            <p>React application using third party API (Spoonacular).</p>
+            <p>Recipes will be returned to user based on their dietary preferences, the ingredients they have on hand, and ingredients they do not want to be included in their search.</p>
+            <p>Created with React, dotenv, CSS, responsive design, and media queries.</p>
+            <a target="__blank" href="https://nikkster311.github.io/what_can_i_make/">Live Version</a> |
+            <a target="__blank" href="https://github.com/nikkster311/recipe_app_v01/">Github</a>
+            <p>Created April 2020</p>
+            <p>Version 01 launched May 2020</p>
+            </br>
+            <p>First Screen - Choose Your Diet</p>
+            <img class="modal-img" src="./imgs/screenshots/screencapture-localhost-3000-2020-05-06-15_37_48.png" alt="">
+            </br>
+            <p>Second Screen - Choose Your Ingredients</p>
+            <img class="modal-img" src="./imgs/screenshots/screencapture-localhost-3000-2020-05-06-15_38_30.png" alt="">
+            </br>
+            <p>Third Screen - Choose Excluded Ingredients</p>
+            <img class="modal-img" src="./imgs/screenshots/screencapture-localhost-3000-2020-05-06-15_39_03.png" alt="">
+            </br>
+            <p>Final Screen - Recipe Cards (With flipping animation - front: title and image, back: ingredients you have, ingredients you still need, link to recipe)</p>
+            <img class="modal-img" src="./imgs/screenshots/screencapture-localhost-3000-2020-05-06-15_39_24.png" alt="">
+            <a target="__blank" href="https://nikkster311.github.io/what_can_i_make/">Live Version</a> |
+            <a target="__blank" href="https://github.com/nikkster311/what_can_i_make/">Github</a>
+            <p>Created April 2020</p>
+            <p>Version 01 launched May 2020</p>
           </div>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-header">Three Things</div>
           <div class="modal-body">
             <h4>What are three positive things that happened for you today?</h4>
             <p>Fullstack application with CRUD capabilities.</p>
@@ -232,6 +267,7 @@ React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
             <a target="__blank" href="https://three-things-ndt.herokuapp.com">Live Version</a> |
             <a target="__blank" href="https://github.com/nikkster311/three_things">Github</a>
             <p>Created March 2020</p>
+            <p>Version 01 launched May 2020</p>
             </br>
             <p>Create New Entry page</p>
             <img class="modal-img" src="./imgs/screenshots/screencapture-localhost-3002-create-2020-04-02-13_46_11.png" alt="">
@@ -241,38 +277,35 @@ React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
             <a target="__blank" href="https://three-things-ndt.herokuapp.com">Live Version</a> |
             <a target="__blank" href="https://github.com/nikkster311/three_things">Github</a>
             <p>Created March 2020</p>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal2" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            Packing List
-            <span class="close">&times;</span>
-          </div>
-          <div class="modal-body">
-            <h4>Create, edit, and delete categories and lists. Cross items off when complete.</h4>
-            <p>Created with React, CSS, and responsive design</p>
-            <a target="__blank" href="https://nikkster311.github.io/packing_list_v02/">Live Version</a> |
-            <a target="__blank" href="https://github.com/nikkster311/packing_list_v02">Github</a>
-            <p>Version 02 launched April 2020</p>
-            <p>Version 01 launched March 2019</p>
-            <img class="modal-img" src="./imgs/screenshots/screencapture-localhost-3000-2020-03-29-21_48_37.png" alt="">
-            <a target="__blank" href="https://nikkster311.github.io/packing_list_v02/">Live Version</a> |
-            <a target="__blank" href="https://github.com/nikkster311/packing_list_v02">Github</a>
-            <p>Version 02 launched April 2020</p>
-            <p>Version 01 launched March 2019</p>
+            <p>Version 01 launched May 2020</p>
           </div>
         </div>
       </div>
 
       <div id="modal3" class="modal">
         <div class="modal-content">
-          <div class="modal-header">
-            Dichotomous Key (Pacific Northwest Plants)
-            <span class="close">&times;</span>
+          <span class="close">&times;</span>
+          <div class="modal-header">Packing List</div>
+          <div class="modal-body">
+            <h4>Create, edit, and delete categories and lists. Cross items off when complete.</h4>
+            <p>Created with React, CSS, and responsive design</p>
+            <a target="__blank" href="https://nikkster311.github.io/packing_list_v03/">Live Version</a> |
+            <a target="__blank" href="https://github.com/nikkster311/packing_list_v03">Github</a>
+            <p>Version 02 launched April 2020</p>
+            <p>Version 01 launched March 2019</p>
+            <img class="modal-img" src="./imgs/screenshots/screencapture-localhost-3000-2020-03-29-21_48_37.png" alt="">
+            <a target="__blank" href="https://nikkster311.github.io/packing_list_v03/">Live Version</a> |
+            <a target="__blank" href="https://github.com/nikkster311/packing_list_v03">Github</a>
+            <p>Version 02 launched April 2020</p>
+            <p>Version 01 launched March 2019</p>
           </div>
+        </div>
+      </div>
+
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-header">Dichotomous Key (Pacific Northwest Plants)</div>
           <div class="modal-body">
             <h4>Figure out what plant you're looking at based on its characteristics.</h4>
             <p>Created with React, CSS, and responsive design</p>
@@ -296,16 +329,15 @@ React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
         </div>
       </div>
 
-      <div id="modal4" class="modal">
+      <div id="modal5" class="modal">
         <div class="modal-content">
-          <div class="modal-header">Portfolio Version 01
-            <span class="close">&times;</span>
-          </div>
+          <span class="close">&times;</span>
+          <div class="modal-header">Portfolio Version 01</div>
           <div class="modal-body">
             <h4>My very first portfolio, created in winter 2019.</h4>
             <p>Created with React, HTML, Parallax, CSS, and responsive design</p>
             <a target="__blank" href="https://nikkster311.github.io/portfolio_react_01/">Live Version</a> |
-            <a target="__blank" href="https://github.com/nikkster311/portfolio_react_01">Github</a>
+            <a target="__blank" href="https://github.com/nikkster311/profile01_htmlcss">Github</a>
             <p>Launched February 2019</p>
             </br>
             <p>Main Screen</p>
@@ -320,11 +352,10 @@ React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
         </div>
       </div>
 
-      <div id="modal5" class="modal">
+      <div id="modal6" class="modal">
         <div class="modal-content">
-          <div class="modal-header">The Other Four
-            <span class="close">&times;</span>
-          </div>
+          <span class="close">&times;</span>
+          <div class="modal-header">The Other Four</div>
           <div class="modal-body">
             <h4>Take 15 seconds to stop and smell the roses.</h4>
             <p>Created with React, CSS, and responsive design</p>
@@ -341,11 +372,10 @@ React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
         </div>
       </div>
 
-      <div id="modal6" class="modal">
+      <div id="modal7" class="modal">
         <div class="modal-content">
-          <div class="modal-header">COVID-19 Quarantine Task Generator
-            <span class="close">&times;</span>
-          </div>
+          <span class="close">&times;</span>
+          <div class="modal-header">COVID-19 Quarantine Task Generator</div>
           <div class="modal-body">
             <h4>Need ideas for quarantine?</h4>
             <p>Created with Python, Javascript, HTML, Bootstrap, and responsive design</p>
@@ -361,10 +391,6 @@ React, Node.js, MongoDB, Express, Javascript, HTML, CSS, Python //  -->
           </div>
         </div>
       </div>
-
-
-
-
 
       </div>
 
