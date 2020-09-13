@@ -770,6 +770,12 @@ header{
   /* width: 100%; */
 }
 
+@media (max-width: 830px){
+  .modal-img-mobile {
+    height: auto;
+  }
+}
+
 /* The Close Button */
 .close {
   color: var(--clr-accent);
